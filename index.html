@@ -1,323 +1,1510 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Danish Khan Afridi - ML Engineer & Computer Vision Specialist. Building intelligent systems that see.">
+    <meta name="keywords" content="Machine Learning, Computer Vision, Deep Learning, AI Engineer, Portfolio">
+    <meta name="author" content="Danish Khan Afridi">
+    <title>Danish Khan Afridi | ML Engineer & Computer Vision Specialist</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #111113;
+            --bg-tertiary: #1a1a1d;
+            --text-primary: #fafafa;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --accent-primary: #818cf8;
+            --accent-secondary: #6366f1;
+            --accent-glow: rgba(129, 140, 248, 0.15);
+            --gradient-1: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            --gradient-2: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --card-bg: rgba(255, 255, 255, 0.02);
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link href="css/portfolio.css" rel="stylesheet">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        <!-- Google Font -->
-        <link rel="preconnecthttps://github.com/max-schaefer-dev/portfolio.git" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
 
-        <!-- Icons -->
-        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-        <title>Danish Khan Afridi</title>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
 
-        <!-- Icon -->
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-        <header id="header" class="fixed-top">
-            <div class="py-2 flex-wrap justify-content-center">
-                <a href="/" id="brand-logo" class="align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none">
-                    <span class="fs-5">Danish Khan Afridi</span>
-                </a>
-                <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
-                    aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon3">
-                        <span></span><span></span><span></span>
-                    </div>
-                </button>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-                <!-- Navigation for desktop -->
-                <nav id="nav-desktop" class="navbar navbar-dark indigo darken-2">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item"><a href="#about" class="nav-link" aria-current="page">About</a></li>
-                        <!-- <li class="nav-item"><a href="#competitions" class="nav-link">Competitions</a></li> -->
-                        <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a id="btn-resume" href="https://www.linkedin.com/in/danish-khan-afridi-a807b7291/" class="btn btn-outline-light" target="_blank"><i class="fas fa-cloud-download-alt"></i>CV</a></li>
-                    </ul>
-                </nav>
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
 
-                <!-- Navigation for mobile devices -->
-                <nav id="nav-mobile" class="sidenav close">
-                    <ul class="nav nav-pills mb-5">
-                        <li class="nav-item"><a href="#about" class="nav-link nav-link-m" aria-current="page">About</a></li>
-                        <!-- <li class="nav-item"><a href="#competitions" class="nav-link nav-link-m">Competitions</a></li> -->
-                        <li class="nav-item"><a href="#achievements" class="nav-link nav-link-m" >Achievements</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link nav-link-m">Contact</a></li>
-                        <li class="nav-item"><a id="btn-resume" href="https://www.linkedin.com/in/danish-khan-afridi-a807b7291/" class="btn btn-outline-light" target="_blank"><i class="fas fa-cloud-download-alt"></i>CV</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-secondary);
+            border-radius: 4px;
+        }
 
-        <!-- Side bar for social links for desktop clients -->
-        <div id="side-bar" class="d-flex align-items-end">
-            <div class="container d-flex">
-                <a title="Contact Email" href="mailto:sahibzadadanishkhanafridi@gmail.com" target="_blank">
-                    <i class="far fa-envelope"></i>
-                </a>
-                <a title="LinkedIn Profile" href="https://www.linkedin.com/in/danish-khan-afridi-a807b7291/" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a title="GitHub Profile" href="https://github.com/sdanishka" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a title="Kaggle Profile" href="https://www.kaggle.com/danishkhanafridi" target="_blank">
-                    <i class="fab fa-kaggle"></i>
-                </a>
-                <a title="Instagram Profile" href="https://www.instagram.com/sahibzadaafridi10/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>   
+        /* Selection */
+        ::selection {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Noise Overlay */
+        .noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.5rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 11, 0.8);
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .nav.scrolled {
+            padding: 1rem 4rem;
+        }
+
+        .nav-logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            transition: color 0.3s var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-1);
+            transition: width 0.3s var(--transition-smooth);
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            padding: 0.75rem 1.5rem;
+            background: var(--gradient-2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s var(--transition-smooth);
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 4rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .hero-gradient {
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(ellipse at center, var(--accent-glow) 0%, transparent 70%);
+            animation: float 15s ease-in-out infinite;
+        }
+
+        .hero-gradient-2 {
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 60%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(244, 114, 182, 0.08) 0%, transparent 70%);
+            animation: float 20s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(5%, 5%) rotate(5deg); }
+            50% { transform: translate(-5%, 10%) rotate(-5deg); }
+            75% { transform: translate(10%, -5%) rotate(3deg); }
+        }
+
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s var(--transition-smooth) backwards;
+        }
+
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s var(--transition-smooth) 0.1s backwards;
+        }
+
+        .hero-title-gradient {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s var(--transition-smooth) 0.2s backwards;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 4rem;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s var(--transition-smooth) 0.3s backwards;
+        }
+
+        .hero-stat {
+            text-align: left;
+        }
+
+        .hero-stat-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s var(--transition-smooth) 0.4s backwards;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s var(--transition-smooth);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--gradient-2);
+            color: white;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-tertiary);
+            border-color: var(--accent-primary);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 8rem 4rem;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--accent-glow);
+            border: 1px solid rgba(129, 140, 248, 0.2);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--bg-secondary);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .about-image-container {
+            position: relative;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 450px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 24px;
+            position: relative;
+            z-index: 1;
+            filter: grayscale(20%);
+            transition: filter 0.5s var(--transition-smooth);
+        }
+
+        .about-image:hover {
+            filter: grayscale(0%);
+        }
+
+        .about-image-decoration {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--accent-primary);
+            border-radius: 24px;
+            z-index: 0;
+        }
+
+        .about-content h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .highlight-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-glow);
+            border-radius: 12px;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .highlight-text h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .highlight-text p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.4s var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s var(--transition-smooth);
+        }
+
+        .skill-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .skill-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            padding: 0.4rem 0.8rem;
+            background: var(--bg-tertiary);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .skill-card:hover .skill-tag {
+            background: var(--accent-glow);
+            color: var(--accent-primary);
+        }
+
+        /* Projects Section */
+        .projects {
+            background: var(--bg-secondary);
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 3rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            transition: all 0.4s var(--transition-smooth);
+        }
+
+        .project-card:hover {
+            border-color: var(--accent-primary);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card:nth-child(even) {
+            direction: rtl;
+        }
+
+        .project-card:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .project-image {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 16/10;
+            background: var(--bg-tertiary);
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s var(--transition-smooth);
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .project-image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(244, 114, 182, 0.1));
+            opacity: 0;
+            transition: opacity 0.4s var(--transition-smooth);
+        }
+
+        .project-card:hover .project-image-overlay {
+            opacity: 1;
+        }
+
+        .project-featured {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            background: var(--accent-glow);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-tech span {
+            padding: 0.5rem 1rem;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .project-link-primary {
+            background: var(--gradient-2);
+            color: white;
+        }
+
+        .project-link-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+        }
+
+        .project-link-secondary {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .project-link-secondary:hover {
+            border-color: var(--accent-primary);
+            background: var(--accent-glow);
+        }
+
+        /* Achievements Section */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .achievement-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .achievement-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-3px);
+        }
+
+        .achievement-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-glow);
+            border-radius: 12px;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .achievement-content h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .achievement-content p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-link {
+            font-size: 0.8rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .achievement-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-link {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .social-link:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 4rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-primary);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .nav {
+                padding: 1rem 2rem;
+            }
+
+            section {
+                padding: 5rem 2rem;
+            }
+
+            .hero {
+                padding: 6rem 2rem 4rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .about-image-container {
+                order: -1;
+                text-align: center;
+            }
+
+            .about-image {
+                max-width: 350px;
+            }
+
+            .project-card {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .project-card:nth-child(even) {
+                direction: ltr;
+            }
+
+            .hero-stats {
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                flex-wrap: wrap;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations on scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s var(--transition-smooth);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="nav-logo">Danish.dev</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="mailto:sahibzadaafridi@gmail.com" class="nav-cta">Let's Talk</a>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-gradient-2"></div>
+            <div class="hero-grid"></div>
         </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                I'm <span class="hero-title-gradient">Danish Afridi</span><br>
+                ML Engineer & CV Specialist
+            </h1>
+            <p class="hero-subtitle">
+                Building intelligent systems that see. I specialize in computer vision, deep learning, 
+                and creating production-ready AI applications that solve real-world problems.
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">25K+</div>
+                    <div class="hero-stat-label">AutoVision Users</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">91.4%</div>
+                    <div class="hero-stat-label">Model Accuracy</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">10K+</div>
+                    <div class="hero-stat-label">Embeddings Processed</div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    View Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Cover Section -->
-        <section id="cover" class="cover-container bg-primary text-white text-center">
-            <div class="container" style="height:100%;">
-                <div class="row mt-1">
-                    <div class="col d-flex">
-                        <div id="cover-text" class="col">
-                            <p>Hey, my name is</p>
-                            <h1>Danish Afridi</h1>
-                            <h1>Building something worthwhile.</h1>
-                            <p>I am a professional specializing in Computer Vision Engineering and Web Development, with a strong focus on machine learning and deep learning. 
-                            My expertise lies in the field of computer vision, and I have a deep passion for this area.</p>
-                            <button onclick="window.location.href='https://www.linkedin.com/in/danish-khan-afridi-a807b7291/';" type="button" class="btn btn-outline-1">Get In Touch</button>
-
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-image-container fade-in">
+                <img src="https://avatars.githubusercontent.com/u/sdanishka" alt="Danish Khan Afridi" class="about-image" 
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 400 400%27%3E%3Crect fill=%27%231a1a1d%27 width=%27400%27 height=%27400%27/%3E%3Ctext x=%27200%27 y=%27220%27 font-family=%27Syne%27 font-size=%27120%27 fill=%27%236366f1%27 text-anchor=%27middle%27%3EDK%3C/text%3E%3C/svg%3E'">
+                <div class="about-image-decoration"></div>
+            </div>
+            <div class="about-content fade-in">
+                <span class="section-label">About Me</span>
+                <h3>Turning Vision Into Intelligence</h3>
+                <p>
+                    I'm an MSc Artificial Intelligence & Data Science student at the University of Hull, 
+                    with a passion for building AI systems that can truly "see" and understand the world. 
+                    My work spans from fish species classification for marine conservation to 
+                    smart photo management with facial recognition.
+                </p>
+                <p>
+                    Currently working as a Tech Manager at HLR Tyres in Birmingham while pursuing my 
+                    research in deep learning approaches for fishing activity monitoring using object 
+                    detection and species classification.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎓</div>
+                        <div class="highlight-text">
+                            <h4>MSc AI & Data Science</h4>
+                            <p>University of Hull</p>
                         </div>
                     </div>
-                    <div class="col" style="justify-content: center;">
-                        <canvas id=c></canvas>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🔬</div>
+                        <div class="highlight-text">
+                            <h4>Research Focus</h4>
+                            <p>Computer Vision & Deep Learning</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">📍</div>
+                        <div class="highlight-text">
+                            <h4>Location</h4>
+                            <p>Birmingham, UK</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🚀</div>
+                        <div class="highlight-text">
+                            <h4>Products Built</h4>
+                            <p>25K+ Users Served</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About me section -->
-        <section id="about" class="container text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>About Me</h1>
-                        <p>I am a professional specializing in Computer Vision Engineering and Web Development, with a strong focus on machine learning and deep learning. 
-                        My expertise lies in the field of computer vision, and I have a deep passion for this area.<br><br>
-                        I thoroughly enjoy embarking on diverse life journeys and pushing my boundaries to acquire new knowledge in uncharted territories. 
-                        What's the next exciting challenge you're planning to take on?
-                        </p>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-header fade-in">
+            <span class="section-label">Expertise</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">
+                A comprehensive toolkit for building intelligent systems from research to production.
+            </p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🤖</div>
+                <h3>Machine Learning & AI</h3>
+                <p>Deep expertise in neural networks, transfer learning, and model optimization for production environments.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Keras</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">ONNX</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">👁️</div>
+                <h3>Computer Vision</h3>
+                <p>Specialized in object detection, face recognition, image classification, and semantic search systems.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">YOLOv8</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">InsightFace</span>
+                    <span class="skill-tag">OpenCLIP</span>
+                    <span class="skill-tag">DINOv2</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">⚡</div>
+                <h3>Backend Development</h3>
+                <p>Building scalable APIs and services for ML model deployment and real-time inference.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">SQLAlchemy</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🎨</div>
+                <h3>Frontend Development</h3>
+                <p>Creating intuitive interfaces for AI-powered applications with modern frameworks.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">Framer Motion</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">☁️</div>
+                <h3>Cloud & MLOps</h3>
+                <p>Deploying and scaling ML systems with modern cloud infrastructure and DevOps practices.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Google Cloud</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Vercel</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">📊</div>
+                <h3>Data Science</h3>
+                <p>End-to-end data pipelines, analysis, and visualization for research and business insights.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Seaborn</span>
+                    <span class="skill-tag">Jupyter</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <!-- Skill lists -->
-                        <div class="skill-container">
-                            <div class="col">
-                                <ul class="skill-list">
-                                    <h6>Machine Learning</h6>
-                                    <li>PyTorch</li>
-                                    <li>Tensorflow</li>
-                                    <li>Keras</li>
-                                    <li>OpenCV</li>
-                                    <li>NumPy</li>
-                                    <li>Pandas</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul class="skill-list">
-                                    <h6>App Development</h6>
-                                    <li>React</li>
-                                    <li>NextJs</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Django</li>
-                                </ul>
-                            </div>
-                            <!-- <div class="col">
-                                <ul class="skill-list">
-                                    <h6>System integ./admin.</h6>
-                                    <li>Microsoft MLP</li>
-                                    <li>Virtual Machine</li>
-                                    <li>Git/ GitHub</li>
-                                    <li>Windows/Linux</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div> -->
-                        </div>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-header fade-in">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+                Production-ready AI applications and research projects that push boundaries.
+            </p>
+        </div>
+        <div class="projects-grid">
+            <!-- AutoVision -->
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Crect fill='%231a1a1d' width='800' height='500'/%3E%3Crect x='50' y='50' width='700' height='400' rx='20' fill='%23111113' stroke='%236366f1' stroke-width='2'/%3E%3Crect x='100' y='100' width='200' height='150' rx='10' fill='%232a2a2d'/%3E%3Crect x='100' y='270' width='200' height='50' rx='5' fill='%236366f1' opacity='0.3'/%3E%3Crect x='100' y='330' width='150' height='30' rx='5' fill='%232a2a2d'/%3E%3Crect x='350' y='100' width='350' height='260' rx='10' fill='%232a2a2d'/%3E%3Ccircle cx='450' cy='200' r='40' fill='none' stroke='%236366f1' stroke-width='3'/%3E%3Ctext x='525' y='250' font-family='monospace' font-size='14' fill='%2371717a'%3EDetecting...%3C/text%3E%3Crect x='350' y='380' width='100' height='30' rx='5' fill='%236366f1'/%3E%3Crect x='470' y='380' width='100' height='30' rx='5' fill='%232a2a2d' stroke='%236366f1'/%3E%3C/svg%3E" alt="AutoVision Dashboard">
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-featured">🏆 25,000+ Users</span>
+                    <h3 class="project-title">AutoVision</h3>
+                    <p class="project-description">
+                        Production-ready vehicle detection and classification platform serving over 25,000 users. 
+                        Features real-time object detection, automated vehicle analysis, and comprehensive analytics dashboard.
+                    </p>
+                    <div class="project-tech">
+                        <span>YOLOv8</span>
+                        <span>Next.js</span>
+                        <span>Vercel</span>
+                        <span>Python</span>
                     </div>
-                    <div class="col image-col">
-                        <div id="image-container" class="col">
-                            <img class="img-fluid mb-5 d-block mx-auto" src="media/Danish_Afridi_500x500.jpg">
-                        </div>
+                    <div class="project-links">
+                        <a href="https://autovision-six.vercel.app/" target="_blank" class="project-link project-link-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/sdanishka" target="_blank" class="project-link project-link-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Competition section
-        <section id="competitions" class="bg-primary text-white">
-            <div class="container text-center">
-                <h1>Competitions</h1>
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Rank</th>
-                        <th scope="col">Competition</th>
-                        <th class="desktop" scope="col">Data Type</th>
-                        <th scope="col">Problem Type</th>
-                        <th scope="col">Code</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Top 3% - 23/713</td>
-                            <td><a href="https://www.drivendata.org/competitions/93/nasa-mars-spectrometry/" target="_blank">Mars Spectrometry: Detect Evidence for Past Habitability</a></td>
-                            <td class="desktop">Tabular Data</td>
-                            <td>Multi-Label Classification</td>
-                            <td><a href="https://github.com/max-schaefer-dev/mars-spectrometry-23th-place-solution" target="_blank"><i class="fas fa-code"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>Top 2% - 19/854</td>
-                            <td><a href="https://www.drivendata.org/competitions/83/cloud-cover/" target="_blank">On Cloud N - Cloud Cover Detection Challange</a></td>
-                            <td class="desktop">Images (geoTIFF)</td>
-                            <td>Semantic Segmentation</td>
-                            <td><a href="https://github.com/max-schaefer-dev/on-cloud-n-19th-place-solution" target="_blank"><i class="fas fa-code"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>Top 7% - 19/296</td>
-                            <td><a href="https://www.drivendata.org/competitions/82/competition-wildlife-video-depth-estimation/page/390/" target="_blank">Deep Chimpact: Depth Estimation for Wildlife Conservation</a></td>
-                            <td class="desktop">Video (mp4)</td>
-                            <td>Depth Estimation</td>
-                            <td><i class="fas fa-code"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Top 8% - 33/403</td>
-                            <td><a href="https://https-deeplearning-ai.github.io/data-centric-comp/" target="_blank">Data-Centric AI Competition</a></td>
-                            <td class="desktop">Images (jpg)</td>
-                            <td>Multi-Class Classification</td>
-                            <td><i class="fas fa-code"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Top 24% - 356/1505</td>
-                            <td><a href="https://www.kaggle.com/c/sartorius-cell-instance-segmentation" target="_blank">Sartorius - Cell Instance Segmentation</a></td>
-                            <td class="desktop">Images (png)</td>
-                            <td>Instance Segmentation</td>
-                            <td><i class="fas fa-code"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Top 27% - 103/383</td>
-                            <td><a href="https://www.kaggle.com/c/landmark-recognition-2021" target="_blank">Google Landmark Recognition 2021</a></td>
-                            <td class="desktop">Images (jpg)</td>
-                            <td>Object Recognition</td>
-                            <td><i class="fas fa-code"></i></td>
-                        </tr>
-                    </tbody>
-                  </table>
+            <!-- Smart Gallery -->
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Crect fill='%231a1a1d' width='800' height='500'/%3E%3Crect x='50' y='50' width='180' height='180' rx='10' fill='%232a2a2d'/%3E%3Crect x='250' y='50' width='180' height='180' rx='10' fill='%232a2a2d'/%3E%3Crect x='450' y='50' width='180' height='180' rx='10' fill='%232a2a2d'/%3E%3Crect x='50' y='250' width='180' height='180' rx='10' fill='%232a2a2d'/%3E%3Crect x='250' y='250' width='180' height='180' rx='10' fill='%232a2a2d'/%3E%3Crect x='450' y='250' width='180' height='180' rx='10' fill='%232a2a2d'/%3E%3Ccircle cx='140' cy='120' r='30' fill='none' stroke='%236366f1' stroke-width='2'/%3E%3Ccircle cx='340' cy='120' r='30' fill='none' stroke='%23f472b6' stroke-width='2'/%3E%3Ccircle cx='540' cy='120' r='30' fill='none' stroke='%2322c55e' stroke-width='2'/%3E%3Crect x='650' y='50' width='100' height='380' rx='10' fill='%23111113' stroke='%236366f1'/%3E%3Ctext x='700' y='100' font-family='sans-serif' font-size='12' fill='%2371717a' text-anchor='middle'%3EFaces%3C/text%3E%3Ccircle cx='700' cy='150' r='20' fill='%232a2a2d'/%3E%3Ccircle cx='700' cy='200' r='20' fill='%232a2a2d'/%3E%3Ccircle cx='700' cy='250' r='20' fill='%232a2a2d'/%3E%3C/svg%3E" alt="Smart Gallery Interface">
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-featured">🖼️ AI Photo Management</span>
+                    <h3 class="project-title">Smart Gallery</h3>
+                    <p class="project-description">
+                        AI-powered photo management system with face recognition, automatic clustering, 
+                        object detection, and semantic search. Processes 10K+ embeddings for intelligent photo organization.
+                    </p>
+                    <div class="project-tech">
+                        <span>InsightFace</span>
+                        <span>OpenCLIP</span>
+                        <span>YOLOv8</span>
+                        <span>FastAPI</span>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sdanishka" target="_blank" class="project-link project-link-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section> -->
 
-        <!-- Competition section -->
-        <section id="achievements" class="container text-center">
-            <h1>Achievements</h1>
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Certificate</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>02/23</td>
-                        <td>Artificial Intelligence A-Z™ 2023: Build an AI</td>
-                        <td>Certification</td>
-                        <td><a href="https://www.udemy.com/certificate/UC-93264078-8d7d-4ed2-abe6-3a46aaf5d6bd/" target="_blank">Udemy</a></td>
-                    </tr>
-                    <tr>
-                        <td>02/23</td>
-                        <td>Learn Python Programming Masterclass</td>
-                        <td>Certification</td>
-                        <td><a href="https://www.udemy.com/certificate/UC-c10e7b1a-4b63-418b-b5fa-187a0ccfbc19/" target="_blank">Udemy</a></td>
-                    </tr>
-                    <tr>
-                        <td>07/21</td>
-                        <td>Modern Computer Vision™ PyTorch, Tensorflow2 Keras & OpenCV4</td>
-                        <td>Certification</td>
-                        <td><a href="https://www.udemy.com/certificate/UC-2b2cf888-375b-46b5-8f80-6ca3d7e60522/" target="_blank">Udemy</a></td>
-                    </tr>
-                    <tr>
-                        <td>09/23</td>
-                        <td>Machine Learning A-Z™ AI, Python & R + ChatGPT Bonus [2023]</td>
-                        <td>Certification</td>
-                        <td><a href="https://www.udemy.com/certificate/UC-fc05694a-b480-4e69-9f28-17ceb0165308/" target="_blank">Udemy</a></td>   
-                    </tr>
-                    <tr>
-                        <td>09/23</td>
-                        <td>Python (Basic) Certificate</td>
-                        <td>Certificate</td>
-                        <td><a href="https://www.hackerrank.com/certificates/5a112e6164d0" target="_blank">HackerRank</a></td>
-                    </tr>
-                  <!--   <tr>
-                        <td>06/21</td>
-                        <td>TensorFlow Developer</td>
-                        <td>Specialization (4 courses)</td>
-                        <td><a href="https://coursera.org/share/863122ae8214e5b9873a02fa8357dc4b" target="_blank">Coursera</a></td>
-                    </tr>
-                    <tr>
-                        <td>05/21</td>
-                        <td>Deep Learning</td>
-                        <td>Specialization (5 courses)</td>
-                        <td><a href="https://coursera.org/share/933073113c9444d5e9b007b18128459c" target="_blank">Coursera</a></td>
-                    </tr> -->
-                </tbody>
-              </table>
-        </section>
-
-        <!-- Contact me section -->
-        <section id="contact" class="bg-primary text-white">
-            <div class="container text-center">
-                <h1>Get In Touch</h1>
-                <p>My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                <br>
-                <button onclick="window.location.href='https://www.linkedin.com/in/danish-khan-afridi-a807b7291/';" type="button" class="btn btn-outline-1">Get In Touch</button>
+            <!-- FishNet Classification -->
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Crect fill='%231a1a1d' width='800' height='500'/%3E%3Cellipse cx='400' cy='250' rx='300' ry='150' fill='none' stroke='%230ea5e9' stroke-width='2' stroke-dasharray='10 5'/%3E%3Cpath d='M200 200 Q 300 150 350 200 T 450 200 Q 500 220 450 250 T 350 280 Q 300 320 200 280 Q 150 250 200 200' fill='%230ea5e9' opacity='0.3'/%3E%3Ccircle cx='230' cy='220' r='8' fill='%23111113'/%3E%3Cpath d='M500 180 Q 580 140 620 180 T 700 180 Q 740 200 700 230 T 620 260 Q 580 290 500 260 Q 470 230 500 180' fill='%2322c55e' opacity='0.3'/%3E%3Ccircle cx='525' cy='200' r='6' fill='%23111113'/%3E%3Crect x='50' y='380' width='200' height='80' rx='10' fill='%23111113' stroke='%236366f1'/%3E%3Ctext x='150' y='420' font-family='monospace' font-size='14' fill='%236366f1' text-anchor='middle'%3E91.4%25 Accuracy%3C/text%3E%3Ctext x='150' y='445' font-family='sans-serif' font-size='10' fill='%2371717a' text-anchor='middle'%3EEfficientNet-B0%3C/text%3E%3Crect x='550' y='380' width='200' height='80' rx='10' fill='%23111113' stroke='%236366f1'/%3E%3Ctext x='650' y='420' font-family='monospace' font-size='14' fill='%236366f1' text-anchor='middle'%3E62.3%25 mAP%3C/text%3E%3Ctext x='650' y='445' font-family='sans-serif' font-size='10' fill='%2371717a' text-anchor='middle'%3EYOLOv8%3C/text%3E%3C/svg%3E" alt="FishNet Classification Research">
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-featured">🎓 MSc Dissertation</span>
+                    <h3 class="project-title">FishNet Classification</h3>
+                    <p class="project-description">
+                        Deep learning approaches for fishing activity monitoring using the FishNet dataset. 
+                        Achieved 91.37% accuracy with EfficientNet-B0 and 62.3% mAP@0.5 with YOLOv8 for species detection.
+                    </p>
+                    <div class="project-tech">
+                        <span>EfficientNet</span>
+                        <span>YOLOv8</span>
+                        <span>PyTorch</span>
+                        <span>Kaggle</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.kaggle.com/danishkhanafridi" target="_blank" class="project-link project-link-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358"/>
+                            </svg>
+                            Kaggle
+                        </a>
+                        <a href="https://github.com/sdanishka" target="_blank" class="project-link project-link-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-            <!-- <script src="js/neural_network.js"></script> -->
-            <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-            <script src="js/navbar.js"></script>
-            <script src="js/neural_network.js"></script>
-        </section>
-    </body>
+
+            <!-- AutoTrainCV -->
+            <div class="project-card fade-in">
+                <div class="project-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Crect fill='%231a1a1d' width='800' height='500'/%3E%3Crect x='50' y='100' width='300' height='300' rx='15' fill='%23111113' stroke='%236366f1'/%3E%3Ctext x='200' y='80' font-family='sans-serif' font-size='14' fill='%2371717a' text-anchor='middle'%3ETraining Progress%3C/text%3E%3Cpath d='M80 350 L120 320 L160 330 L200 280 L240 260 L280 220 L320 200' fill='none' stroke='%236366f1' stroke-width='3'/%3E%3Cpath d='M80 350 L120 340 L160 320 L200 290 L240 250 L280 230 L320 210' fill='none' stroke='%23f472b6' stroke-width='3' stroke-dasharray='5 5'/%3E%3Crect x='400' y='100' width='350' height='130' rx='10' fill='%23111113' stroke='%232a2a2d'/%3E%3Ctext x='420' y='140' font-family='monospace' font-size='12' fill='%2371717a'%3EEpoch: 45/100%3C/text%3E%3Ctext x='420' y='165' font-family='monospace' font-size='12' fill='%2322c55e'%3ELoss: 0.0234%3C/text%3E%3Ctext x='420' y='190' font-family='monospace' font-size='12' fill='%236366f1'%3EmAP: 0.847%3C/text%3E%3Crect x='420' y='205' width='200' height='8' rx='4' fill='%232a2a2d'/%3E%3Crect x='420' y='205' width='90' height='8' rx='4' fill='%236366f1'/%3E%3Crect x='400' y='270' width='350' height='130' rx='10' fill='%23111113' stroke='%232a2a2d'/%3E%3Ctext x='420' y='310' font-family='sans-serif' font-size='12' fill='%2371717a'%3EModel: YOLOv8x%3C/text%3E%3Ctext x='420' y='335' font-family='sans-serif' font-size='12' fill='%2371717a'%3EDataset: COCO%3C/text%3E%3Ctext x='420' y='360' font-family='sans-serif' font-size='12' fill='%2371717a'%3EGPU: NVIDIA T4%3C/text%3E%3C/svg%3E" alt="AutoTrainCV Platform">
+                    <div class="project-image-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <span class="project-featured">🏋️ MLOps Platform</span>
+                    <h3 class="project-title">AutoTrainCV</h3>
+                    <p class="project-description">
+                        Automated computer vision model training platform with FastAPI backend and Next.js frontend. 
+                        Features one-click training, real-time metrics, and cloud deployment capabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>Next.js</span>
+                        <span>YOLOv8</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sdanishka" target="_blank" class="project-link project-link-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="section-header fade-in">
+            <span class="section-label">Credentials</span>
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <p class="section-subtitle">
+                Continuous learning and professional development in AI and software engineering.
+            </p>
+        </div>
+        <div class="achievements-grid">
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">🤖</div>
+                <div class="achievement-content">
+                    <h4>Artificial Intelligence A-Z™ 2023</h4>
+                    <p>Build an AI with Deep Q-Learning</p>
+                    <a href="https://www.udemy.com/certificate/UC-93264078-8d7d-4ed2-abe6-3a46aaf5d6bd/" target="_blank" class="achievement-link">View Certificate →</a>
+                </div>
+            </div>
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">🐍</div>
+                <div class="achievement-content">
+                    <h4>Python Programming Masterclass</h4>
+                    <p>Comprehensive Python Development</p>
+                    <a href="https://www.udemy.com/certificate/UC-c10e7b1a-4b63-418b-b5fa-187a0ccfbc19/" target="_blank" class="achievement-link">View Certificate →</a>
+                </div>
+            </div>
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">👁️</div>
+                <div class="achievement-content">
+                    <h4>Modern Computer Vision™</h4>
+                    <p>PyTorch, TensorFlow, Keras & OpenCV</p>
+                    <a href="https://www.udemy.com/certificate/UC-2b2cf888-375b-46b5-8f80-6ca3d7e60522/" target="_blank" class="achievement-link">View Certificate →</a>
+                </div>
+            </div>
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">📊</div>
+                <div class="achievement-content">
+                    <h4>Machine Learning A-Z™ 2023</h4>
+                    <p>AI, Python & R + ChatGPT Bonus</p>
+                    <a href="https://www.udemy.com/certificate/UC-fc05694a-b480-4e69-9f28-17ceb0165308/" target="_blank" class="achievement-link">View Certificate →</a>
+                </div>
+            </div>
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">✅</div>
+                <div class="achievement-content">
+                    <h4>Python (Basic) Certificate</h4>
+                    <p>HackerRank Certification</p>
+                    <a href="https://www.hackerrank.com/certificates/5a112e6164d0" target="_blank" class="achievement-link">View Certificate →</a>
+                </div>
+            </div>
+            <div class="achievement-card fade-in">
+                <div class="achievement-icon">🎓</div>
+                <div class="achievement-content">
+                    <h4>MSc AI & Data Science</h4>
+                    <p>University of Hull (Current)</p>
+                    <span class="achievement-link" style="color: var(--text-muted);">In Progress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content fade-in">
+            <span class="section-label">Contact</span>
+            <h2 class="contact-title">Let's Build Something<br><span class="hero-title-gradient">Amazing Together</span></h2>
+            <p class="contact-subtitle">
+                I'm always open to discussing new projects, creative ideas, or opportunities 
+                to be part of your vision. Let's connect!
+            </p>
+            <div class="contact-buttons">
+                <a href="mailto:sahibzadaafridi@gmail.com" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Send Email
+                </a>
+                <a href="https://www.linkedin.com/in/danish-khan-afridi-a807b7291/" target="_blank" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/sdanishka" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/danish-khan-afridi-a807b7291/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="https://www.kaggle.com/danishkhanafridi" target="_blank" class="social-link" aria-label="Kaggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358"/>
+                    </svg>
+                </a>
+                <a href="https://medium.com/@sahibzadaafridi" target="_blank" class="social-link" aria-label="Medium">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                    </svg>
+                </a>
+                <a href="https://stackoverflow.com/users/14918680/danish-afridi" target="_blank" class="social-link" aria-label="Stack Overflow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.725 0l-1.72 1.277 6.39 8.588 1.72-1.277L15.725 0zm-1.97 3.37l-1.435 1.555 7.782 7.2 1.435-1.555-7.782-7.2zm-3.77 5.063l-.96 1.846 9.24 4.822.96-1.846-9.24-4.822zM7.87 13.362l-.436 2.052 10.23 2.168.436-2.052-10.23-2.168zM19.5 21v-2h-15v2h15zm-15 1v2h15v-2h-15z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="container-cover bg-primary text-center text-white justify-content-center">
-
-        <!-- links to socials for mobile clients -->
-        <div id="social-bar" class="container text-center">
-            <div class="d-flex justify-content-around">
-                <a title="Contact Email" href="mailto:prv.sahibzadadanishkhanafridi@gmail.com" target="_blank">
-                    <i class="far fa-envelope"></i>
-                </a>
-                <a title="LinkedIn Profile" href="https://www.linkedin.com/in/danish-khan-afridi-a807b7291/" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a title="GitHub Profile" href="https://github.com/sdanishka" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a title="Kaggle Profile" href="https://www.kaggle.com/danishkhanafridi" target="_blank">
-                    <i class="fab fa-kaggle"></i>
-                </a>
-                <a title="Instagram Profile" href="https://www.instagram.com/sahibzadaafridi10/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-        <!-- <p>Designed & build by Max Schäfer</p> -->
+    <footer>
+        <p>Designed & Built by <a href="https://github.com/sdanishka">Danish Khan Afridi</a> © 2024</p>
     </footer>
+
+    <script>
+        // Navbar scroll effect
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenuBtn?.addEventListener('click', () => {
+            navLinks?.classList.toggle('active');
+        });
+
+        // Typing effect for hero (optional enhancement)
+        const titles = ['ML Engineer', 'CV Specialist', 'AI Researcher', 'Full Stack Dev'];
+        let titleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        
+        // Console Easter egg
+        console.log('%c🚀 Danish Khan Afridi - Portfolio', 'font-size: 24px; font-weight: bold; color: #6366f1;');
+        console.log('%cBuilding intelligent systems that see.', 'font-size: 14px; color: #a1a1aa;');
+        console.log('%cInterested in collaboration? Let\'s connect!', 'font-size: 12px; color: #818cf8;');
+    </script>
+</body>
 </html>
